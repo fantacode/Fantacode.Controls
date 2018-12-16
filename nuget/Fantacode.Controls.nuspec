@@ -1,0 +1,62 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Fantacode.Controls</id>
+    <version>1.0.0</version>
+    <title>Fantacode Xamarin Forms Controls</title>
+	<authors>Fantacode</authors>
+    <owners>fantacode</owners>
+    <projectUrl>https://github.com/fantacode/Fantacode.Controls</projectUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+		Inhouse development controls
+    </description>
+	<copyright>Copyright ©2018 Fantacode Solutions LLP</copyright>
+    <tags>xamarin xamarin.forms controls</tags>
+    <releaseNotes>
+      [0.1.0-pre] 
+      Initial Prelaunch with limited features and potential issues.
+    </releaseNotes>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="Xamarin.Forms" version="3.1.0.583944" />
+      </group>
+      <group targetFramework="portable-net45+win+wpa81+wp80">
+        <dependency id="Xamarin.Forms" version="3.1.0.583944" />
+      </group>
+      <group targetFramework="MonoAndroid10">
+        <dependency id="Xamarin.Forms" version="3.1.0.583944" />
+      </group>
+      <group targetFramework="Xamarin.iOS10">
+        <dependency id="Xamarin.Forms" version="3.1.0.583944" />
+      </group>
+      <group targetFramework="net45">
+        <dependency id="Xamarin.Forms" version="3.1.0.583944" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- .net standard -->
+    <file src="..\Fantacode.Controls.CustomDatePicker\bin\Release\Fantacode.Controls.*" target="lib\netstandard2.0" />
+	<file src="..\Fantacode.Controls.CustomPicker\bin\Release\Fantacode.Controls.*" target="lib\netstandard2.0" />
+	<file src="..\Fantacode.Controls.CustomEntry\bin\Release\Fantacode.Controls.*" target="lib\netstandard2.0" />
+	<file src="..\Fantacode.Controls.CustomTimePicker\bin\Release\Fantacode.Controls.*" target="lib\netstandard2.0" />
+   
+    <!-- PCL -->
+	<file src="..\Fantacode.Controls.CustomDatePicker\bin\Release\Fantacode.Controls.*" target="lib\portable-net45+win8+wpa81+wp8" />
+	<file src="..\Fantacode.Controls.CustomPicker\bin\Release\Fantacode.Controls.*" target="lib\portable-net45+win8+wpa81+wp8" />
+	<file src="..\Fantacode.Controls.CustomEntry\bin\Release\Fantacode.Controls.*" target="lib\portable-net45+win8+wpa81+wp8" />
+	<file src="..\Fantacode.Controls.CustomTimePicker\bin\Release\Fantacode.Controls.*" target="lib\portable-net45+win8+wpa81+wp8" />
+
+    <!-- droid -->
+	<file src="..\Fantacode.Controls.CustomDatePicker.Droid\bin\Release\Fantacode.Controls.*" target="lib\MonoAndroid10" />
+	<file src="..\Fantacode.Controls.CustomPicker.Droid\bin\Release\Fantacode.Controls.*" target="lib\MonoAndroid10" />
+	<file src="..\Fantacode.Controls.CustomEntry.Droid\bin\Release\Fantacode.Controls.*" target="lib\MonoAndroid10" />
+	<file src="..\Fantacode.Controls.CustomTimePicker.Droid\bin\Release\Fantacode.Controls.*" target="lib\MonoAndroid10"/>
+   
+    <!-- iOS -->
+	<file src="..\Fantacode.Controls.CustomDatePicker.iOS\bin\Release\Fantacode.Controls.*" target="lib\Xamarin.iOS10" />
+	<file src="..\Fantacode.Controls.CustomPicker.iOS\bin\Release\Fantacode.Controls.*" target="lib\Xamarin.iOS10" />
+	<file src="..\Fantacode.Controls.CustomEntry.iOS\bin\Release\Fantacode.Controls.*" target="lib\Xamarin.iOS10" />
+	<file src="..\Fantacode.Controls.CustomTimePicker.iOS\bin\Release\Fantacode.Controls.*" target="lib\Xamarin.iOS10"/>
+  </files>
+</package>
