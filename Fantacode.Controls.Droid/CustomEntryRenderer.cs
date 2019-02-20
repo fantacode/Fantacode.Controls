@@ -30,6 +30,36 @@ namespace Fantacode.Controls.Droid
             }
         }
 
-        public override bool PerformLongClick()         {             try             {                 return base.PerformLongClick();             }             catch(NullPointerException e)             {                 return true;             }             catch(System.Exception e)             {                 return true;             }         }          public override bool PerformLongClick(float x, float y)         {             try             {                 return base.PerformLongClick(x, y);             }             catch (NullPointerException e)             {                 return true;             }             catch (System.Exception e)             {                 return true;             }         }
+        public override bool PerformLongClick()
+        {
+            try
+            {
+                return base.PerformLongClick();
+            }
+            catch(NullPointerException e)
+            {
+                return true;
+            }
+            catch(System.Exception e)
+            {
+                return true;
+            }
+        }
+
+        public override bool PerformLongClick(float x, float y)
+        {
+            try
+            {
+                return base.PerformLongClick(x, y);
+            }
+            catch(NullPointerException e)
+            {
+                return true;
+            }
+            catch(System.Exception e)
+            {
+                return true;
+            }
+        }
     }
 }
