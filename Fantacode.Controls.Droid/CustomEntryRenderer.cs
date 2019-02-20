@@ -2,6 +2,7 @@
 using Android.Content;
 using Fantacode.Controls;
 using Fantacode.Controls.Droid;
+using Java.Lang;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
@@ -26,6 +27,38 @@ namespace Fantacode.Controls.Droid
                 Control.LayoutParameters = layoutParams;
                 Control.SetPadding(0, 0, 0, 0);
                 SetPadding(0, 0, 0, 0);
+            }
+        }
+
+        public override bool PerformLongClick()
+        {
+            try
+            {
+                return base.PerformLongClick();
+            }
+            catch(NullPointerException e)
+            {
+                return true;
+            }
+            catch(System.Exception e)
+            {
+                return true;
+            }
+        }
+
+        public override bool PerformLongClick(float x, float y)
+        {
+            try
+            {
+                return base.PerformLongClick(x, y);
+            }
+            catch(NullPointerException e)
+            {
+                return true;
+            }
+            catch(System.Exception e)
+            {
+                return true;
             }
         }
     }
