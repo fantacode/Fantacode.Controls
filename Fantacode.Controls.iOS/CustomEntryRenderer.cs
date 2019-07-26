@@ -25,6 +25,10 @@ namespace Fantacode.Controls.iOS
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
+            var element = (CustomEntry)this.Element;
+
+            if (element == null)
+                return;
 
             Control.Layer.BorderWidth = 0;
             Control.BorderStyle = UITextBorderStyle.None;
