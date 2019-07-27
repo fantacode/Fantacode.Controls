@@ -28,9 +28,6 @@ namespace Fantacode.Controls.iOS
 
             var element = (CustomPicker)this.Element;
 
-            Control.BorderStyle = UITextBorderStyle.None;
-            Control.BackgroundColor = null;
-
             if (element == null)
                 return;
 
