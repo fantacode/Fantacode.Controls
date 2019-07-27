@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Fantacode.Controls</id>
-    <version>1.0.3</version>
+    <version>1.0.5</version>
     <title>Fantacode Xamarin Forms Controls</title>
 	<authors>Fantacode</authors>
     <owners>fantacode</owners>

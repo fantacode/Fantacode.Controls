@@ -30,8 +30,11 @@ namespace Fantacode.Controls.iOS
             if (element == null)
                 return;
 
-            Control.Layer.BorderWidth = 0;
-            Control.BorderStyle = UITextBorderStyle.None;
+            if (Control != null && Element != null)
+            {
+                Control.Layer.BorderWidth = 0;
+                Control.BorderStyle = UITextBorderStyle.None;
+            }
         }
     }
 }
